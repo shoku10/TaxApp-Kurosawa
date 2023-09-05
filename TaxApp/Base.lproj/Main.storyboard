@@ -57,12 +57,18 @@
                                     <segment title="10%"/>
                                     <segment title="8%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="taxRateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pNl-Ts-ck0"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCI-hq-DLL">
                                 <rect key="frame" x="334" y="181" width="59" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="追加"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="595-pX-oEh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etw-gs-RxE">
                                 <rect key="frame" x="16" y="141" width="361" height="21"/>
@@ -76,17 +82,27 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jeS-GD-vyX">
-                        <barButtonItem key="rightBarButtonItem" title="合計" id="kim-ht-tIA"/>
+                        <barButtonItem key="rightBarButtonItem" title="合計" id="kim-ht-tIA">
+                            <connections>
+                                <segue destination="aYM-0f-d9W" kind="show" id="AVX-2T-m0E"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="priceTextField" destination="tOd-MJ-lDi" id="GNK-OC-ADy"/>
+                        <outlet property="resultLabel" destination="etw-gs-RxE" id="uKW-if-D89"/>
+                        <outlet property="tableView" destination="lbO-VC-6mk" id="sOE-UX-oHt"/>
+                        <outlet property="taxSegmentedControl" destination="A4V-4f-qN3" id="A0L-1a-dHP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-695.41984732824426" y="-140.14084507042253"/>
         </scene>
-        <!--View Controller-->
+        <!--Total View Controller-->
         <scene sceneID="gcV-s8-Wc8">
             <objects>
-                <viewController id="aYM-0f-d9W" sceneMemberID="viewController">
+                <viewController id="aYM-0f-d9W" customClass="TotalViewController" customModule="TaxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PRV-Xi-2K8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,6 +118,10 @@
                         <viewLayoutGuide key="safeArea" id="f6o-BR-9Kp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="T54-oB-yKK"/>
+                    <connections>
+                        <outlet property="totalLabel" destination="nPL-WD-Ou3" id="hR8-Ff-QZJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2L-x5-fCp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

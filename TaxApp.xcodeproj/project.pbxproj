@@ -13,6 +13,7 @@
 		CE7B1EAD2AA70B6F00B41F6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7B1EAB2AA70B6F00B41F6E /* Main.storyboard */; };
 		CE7B1EAF2AA70B7300B41F6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7B1EAE2AA70B7300B41F6E /* Assets.xcassets */; };
 		CE7B1EB22AA70B7300B41F6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7B1EB02AA70B7300B41F6E /* LaunchScreen.storyboard */; };
+		CE7B1EBA2AA70FC300B41F6E /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B1EB92AA70FC300B41F6E /* TotalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE7B1EAE2AA70B7300B41F6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7B1EB12AA70B7300B41F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7B1EB32AA70B7300B41F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7B1EB92AA70FC300B41F6E /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CE7B1EA72AA70B6F00B41F6E /* SceneDelegate.swift */,
 				CE7B1EA92AA70B6F00B41F6E /* ViewController.swift */,
 				CE7B1EAB2AA70B6F00B41F6E /* Main.storyboard */,
+				CE7B1EB92AA70FC300B41F6E /* TotalViewController.swift */,
 				CE7B1EAE2AA70B7300B41F6E /* Assets.xcassets */,
 				CE7B1EB02AA70B7300B41F6E /* LaunchScreen.storyboard */,
 				CE7B1EB32AA70B7300B41F6E /* Info.plist */,
@@ -141,6 +144,7 @@
 				CE7B1EAA2AA70B6F00B41F6E /* ViewController.swift in Sources */,
 				CE7B1EA62AA70B6F00B41F6E /* AppDelegate.swift in Sources */,
 				CE7B1EA82AA70B6F00B41F6E /* SceneDelegate.swift in Sources */,
+				CE7B1EBA2AA70FC300B41F6E /* TotalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
