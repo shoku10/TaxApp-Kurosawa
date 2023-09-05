@@ -84,6 +84,7 @@
                     <navigationItem key="navigationItem" id="jeS-GD-vyX">
                         <barButtonItem key="rightBarButtonItem" title="合計" id="kim-ht-tIA">
                             <connections>
+                                <action selector="totalButtonTapped:" destination="BYZ-38-t0r" id="d7i-Qg-YEB"/>
                                 <segue destination="aYM-0f-d9W" kind="show" id="AVX-2T-m0E"/>
                             </connections>
                         </barButtonItem>
