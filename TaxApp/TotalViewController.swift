@@ -16,6 +16,6 @@ class TotalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        totalLabel.text = "合計金額は \(totalAmount) 円です。"
+        totalLabel.text = "¥" + String(format: "%.2f", totalAmount)
     }
 }
